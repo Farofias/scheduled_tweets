@@ -33,9 +33,8 @@ class TweetsController < ApplicationController
 
     def destroy
         @tweet.destroy
-        redirect_to tweets_path, notice: "Tweet was updaterd successfully"
+        redirect_to tweets_path, notice: "Tweet was updated successfully"
     end
-
 
     private
 
