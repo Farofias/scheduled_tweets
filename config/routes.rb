@@ -19,7 +19,7 @@
   patch "password/reset/edit", to: "password_resets#update"
 
   get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
-  get 'auth/failure', to: redirect('/')
+  get 'auth/failure', to: "omniauth_callbacks#twitter"
 
   
   resources :twitter_accounts
